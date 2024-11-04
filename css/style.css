@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: #5c20dd;
+    /* Verde escuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 150px;
+    height: 130px;
+    margin-left: 30px;
+}
+
+/* Toogle no navbar, quando diminuir a tela sera usado*/
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.frase {
+    display: flex;
+}
+
+.fonte_frase {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 43px;
+    color: white;
+}
+
+.foto_lado_frase {
+    height: 30px;
+    width: 32px;
+    margin-left: 9px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 130px;
+    background-color: rgb(36, 36, 34);
+    padding: 13px;
+    border-radius: 15px;
+}
+
+.nav-links a {
+    color: #0f3ed7;
+    font-family: initial;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 23px;
+}
+
+
+
+@media (max-width: 1240px) {
+    .nav-links {
+        margin-top: 110px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #006400;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding-top: 10px;
+
+        /* Espaço adicional para o dropdown */
+    }
+
+    .conteudo_frase {
+        display: none;
+    }
+
+    .monsieur-la-doulaise-regular {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+
+    .nav-links a {
+        font-size: 18px;
+
+        /* Tamanho ajustado para dispositivos móveis */
+        margin: 10px 0;
+        /* Espaçamento vertical entre os links */
+    }
+
+    .menu-icon {
+        display: flex;
+        margin-right: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .conteudo_frase {
+        display: none;
+    }
+
+    .nav-links {
+        margin-top: 220px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #006400;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding-top: 50px;
+        /* Espaço adicional para o dropdown */
+    }
+
+
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+
+        /* Tamanho ajustado para dispositivos móveis */
+        margin: 10px 0;
+        /* Espaçamento vertical entre os links */
+    }
+
+    .menu-icon {
+        display: flex;
+        margin-right: 130px;
+    }
+}
